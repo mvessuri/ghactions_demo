@@ -45,4 +45,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Deploy to S3 bucket
-        run: aws s3 sync ./export s3://ghactionsnext
+        run: aws s3 sync ./out s3://ghactionsnext
