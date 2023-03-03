@@ -9,6 +9,7 @@ on:
 jobs:
   # Build job
   build:
+    name: Build and Export
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,6 +33,7 @@ jobs:
           
   # Deploy job
   deploy:
+    name: Deploy to AWS S3
     runs-on: ubuntu-latest
     needs: build
     steps:
