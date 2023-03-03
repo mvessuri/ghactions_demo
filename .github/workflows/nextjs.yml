@@ -1,4 +1,4 @@
-name: Example of GitHub Actions workflow to build a Next.js site, export it as HTML, and deploy it to AWS S3
+name: Build a Next.js site, export it as HTML, and deploy it to AWS S3
 
 on:
   # This workflow will run on pushes targeting the main branch
